@@ -22,6 +22,8 @@ const options = {
 }
 app.use(cors(options));
 
+require('./utils/auth/index')
+
 app.get('/', (req, res) => {
   res.send('Hola mi server en express');
 });
