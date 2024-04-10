@@ -79,7 +79,7 @@ class AuthService {
     }
   }
 
-  async sendMail(infoEmail) {
+  async sendEmail(infoEmail) {
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 465,
